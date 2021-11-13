@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>AddTripDetails</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+  </head>
+  <body>
+  <div id="wrapper">
+      <div id="left">
+        <div id="signin">
+          <div class="logo">
+            <img src="https://reva.edu.in/iacit-2019/wp-content/uploads/2019/02/logo_reva.png" />
+          </div>
+          <form>
+            <h1>ADD TRIP DETAILS</h1>
+            <div>
+            <lable> PickUp  </lable>
+            <input type="text" class="text-input"
+            placeholder="Enter CurrentLocation..." required/>
+            </div>
+            <div>
+            <lable> Destination </lable>
+            <input type="text" class="text-input" placeholder="Enter drop from ride estimate..." required/>
+            </div>
+            <div>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                  <label><h5>Date and Time</h5></label>
+                    <input type="text" class="text-input" />
+                    <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            </div>
+          <button type="submit" class="primary-btn"><a href="https://chatcord.shreeshailyaran.repl.co/">SUBMIT</a></button>
+          </form>
+     <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+    </div>   
+  </body>
+</html>
